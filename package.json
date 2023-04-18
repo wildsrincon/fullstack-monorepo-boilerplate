@@ -1,14 +1,45 @@
 {
-  "name": "fullstack-monorepo-boilerplate",
-  "version": "0.0.0",
-  "license": "MIT",
-  "scripts": {},
+  "name": "root",
   "private": true,
-  "dependencies": {},
-  "devDependencies": {
-    "nx": "15.9.2"
-  },
+  "author": "Wilder Rincon <wildsrincon.developer@gmail.com>",
   "workspaces": [
+    "apps/*",
     "packages/*"
-  ]
+  ],
+  "scripts": {
+    "build:libs": "npx nx run build --project=@root/client",
+    "mobile": "lerna run start --scope mobile",
+    "mobile:android": "lerna run android --scope mobile",
+    "mobile:ios": "lerna run ios --scope mobile",
+    "web": "lerna run dev --scope web",
+    "web:build": "lerna run build --scope web",
+    "web:preview": "lerna run preview --scope web"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.11.0"
+  },
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.1.1",
+    "@types/node": "16.11.7",
+    "@typescript-eslint/eslint-plugin": "^5.36.1",
+    "@typescript-eslint/parser": "^5.36.1",
+    "@vitejs/plugin-react": "^3.1.0",
+    "eslint": "~8.36.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-config-standard-with-typescript": "^34.0.1",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "lerna": "6.5.1",
+    "prettier": "^2.8.3",
+    "prisma": "^4.11.0",
+    "tslib": "^2.3.0",
+    "typescript": "^4.9.5",
+    "vite": "^4.1.0"
+  },
+  "packageManager": "yarn@3.4.1"
 }

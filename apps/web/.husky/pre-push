@@ -1,0 +1,15 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo '🏗️👷 testing your project before push your code 🧪🧪'
+
+# Check Tests for push your code
+pnpm run test ||
+(
+    echo '🤢🤮🤢🤮 Its FOKING RAW - Your tests looks disgusting. 🤢🤮🤢🤮
+            Unit Tests Check Failed. Review your tests, add changes and try push your again.';
+    false;
+)
+
+# If everything passes... Now we can push your code
+echo '✅✅✅✅ You win this time... I am pushing your code this now. ✅✅✅✅'
