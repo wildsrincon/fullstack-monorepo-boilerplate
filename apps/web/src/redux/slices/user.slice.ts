@@ -1,6 +1,5 @@
-/* eslint-disable import/extensions */
-import { createSlice } from '@reduxjs/toolkit';
 import { UserEmptyState } from '@/models';
+import { createSlice } from '@reduxjs/toolkit';
 
 const userSlice = createSlice({
   name: 'user',

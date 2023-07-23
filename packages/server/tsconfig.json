@@ -18,14 +18,14 @@
     /* Type Checking */
     "strict": true,
     "noImplicitAny": true,
-    
+
     "strictPropertyInitialization": false,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
-    "skipLibCheck": true,
+    "skipLibCheck": true
   },
   "include": ["src"],
-  "exclude": [ "node_modules", "bin" ]
+  "exclude": ["node_modules", "bin"]
 }

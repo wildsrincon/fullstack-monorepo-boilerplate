@@ -1,10 +1,10 @@
+import { UserEmptyState } from '../../../models';
+import { fetchMorty, rickAndMortyUrl } from '../services/api.service';
+import { createUser } from '@/redux/slices/user.slice';
+import type { AppDispatch } from '@/redux/store';
 import { ButtonDispatch } from '@/styled-components/btnDispatch.styled';
 import { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { UserEmptyState } from '../../../models';
-import { createUser } from '@/redux/slices/user.slice';
-import { fetchMorty, rickAndMortyUrl } from '../services/api.service';
-import type { AppDispatch } from '@/redux/store';
 
 export default function CreateUserBtn(): JSX.Element {
   const dispatch = useDispatch<AppDispatch>();

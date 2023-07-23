@@ -1,6 +1,6 @@
-import { useDispatch } from 'react-redux';
 import { modifyUser } from '@/redux/slices/user.slice';
 import { ButtonDispatch } from '@/styled-components/btnDispatch.styled';
+import { useDispatch } from 'react-redux';
 
 export default function ModifyUserBtn(): JSX.Element {
   const dispatch = useDispatch();

@@ -1,4 +1,3 @@
-/* eslint-disable import/prefer-default-export */
 import { type ApiUser, type User } from '../../../models/user.model';
 
 export const HomeAdapter = (user: ApiUser): User => {

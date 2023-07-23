@@ -1,9 +1,9 @@
+import { WrappedApp } from './App';
+import './index.css';
+import { store } from './redux/store';
+import { ErrorBoundary } from '@/utils/ErrorBoundary';
 import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
-import { store } from './redux/store';
-import { WrappedApp } from './App';
-import { ErrorBoundary } from '@/utils/ErrorBoundary';
-import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <ErrorBoundary>

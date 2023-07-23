@@ -1,6 +1,6 @@
+import { ErrorMessage } from '../shared/ErrorMessage';
 import { Component } from 'react';
 import type { ReactNode } from 'react';
-import { ErrorMessage } from '../shared/ErrorMessage';
 
 interface Props {
   children: ReactNode;

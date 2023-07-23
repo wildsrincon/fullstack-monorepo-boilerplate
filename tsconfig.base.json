@@ -1,10 +1,6 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
     "strict": true,
-    "esModuleInterop": false,
-    "useDefineForClassFields": true,
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "noImplicitAny": true,
     "strictNullChecks": true,
     "target": "ESNext",
@@ -12,13 +8,12 @@
     "noEmit": true,
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "module": "ESNext",
-    "moduleResolution": "Node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "rootDir": ".",
     "paths": {
+      "@root/client/*": ["./packages/client/src/*"],
+      "@root/server/*": ["./packages/server/src/*"],
       "@/*": ["./src/*"]
     }
   },

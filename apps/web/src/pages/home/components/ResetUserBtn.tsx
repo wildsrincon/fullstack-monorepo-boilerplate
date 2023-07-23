@@ -1,6 +1,6 @@
-import { useDispatch } from 'react-redux';
 import { resetUser } from '@/redux/slices/user.slice';
 import { ButtonDispatch } from '@/styled-components/btnDispatch.styled';
+import { useDispatch } from 'react-redux';
 
 export default function ResetUserBtn(): JSX.Element {
   const dispatch = useDispatch();

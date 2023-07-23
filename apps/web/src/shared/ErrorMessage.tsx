@@ -1,4 +1,5 @@
 import { Layout } from '../styled-components/layout.styled';
+
 interface Props {
   error: Error;
 }

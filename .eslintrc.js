@@ -6,11 +6,7 @@ module.exports = {
     commonjs: true,
     node: true,
   },
-  extends: [
-    'standard-with-typescript',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:prettier/recommended',
-  ],
+  extends: ['eslint:recommended', 'plugin:react/recommended', 'plugin:prettier/recommended'],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
@@ -24,7 +20,7 @@ module.exports = {
     },
   },
   parser: '@typescript-eslint/parser',
-  plugins: ['react', '@typescript-eslint', 'prettier', 'unused-imports'],
+  plugins: ['@typescript-eslint', 'react', 'react-hooks', 'unused-imports'],
   rules: {
     'react/no-children-prop': 'off',
     'no-console': 'warn',

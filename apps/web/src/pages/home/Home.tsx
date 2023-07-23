@@ -1,6 +1,6 @@
 import { Layout } from '../../styled-components/layout.styled';
-import { CreateUserBtn, ModifyUserBtn, ResetUserBtn } from './components';
 import { HomeTitle } from '../../styled-components/title.styled';
+import { CreateUserBtn, ModifyUserBtn, ResetUserBtn } from './components';
 
 export function Home(): JSX.Element {
   return (

@@ -1,5 +1,5 @@
-import type { User } from '@/models/user.model';
 import { HomeAdapter } from '../adapter/home.adapter';
+import type { User } from '@/models/user.model';
 
 export const rickAndMortyUrl = 'https://rickandmortyapi.com/api/character/2';
 

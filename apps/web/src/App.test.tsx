@@ -1,11 +1,10 @@
-import { describe, it } from 'vitest';
-import { render, screen } from '@testing-library/react';
-import { Provider } from 'react-redux';
-import { configureStore } from '@reduxjs/toolkit';
-
-import { MemoryRouter } from 'react-router-dom';
 import { App, WrappedApp } from './App';
 import { userReducer } from './redux/store';
+import { configureStore } from '@reduxjs/toolkit';
+import { render, screen } from '@testing-library/react';
+import { Provider } from 'react-redux';
+import { MemoryRouter } from 'react-router-dom';
+import { describe, it } from 'vitest';
 
 describe('App', () => {
   it('renders without crashing', () => {

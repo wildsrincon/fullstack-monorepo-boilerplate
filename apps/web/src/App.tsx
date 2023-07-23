@@ -1,9 +1,8 @@
-import { HashRouter, Route, Routes } from 'react-router-dom';
-import { useSelector } from 'react-redux';
-import { type AppStore } from './redux/store';
 import './App.css';
-
 import { Home, NotFound } from './pages';
+import { type AppStore } from './redux/store';
+import { useSelector } from 'react-redux';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 
 export function App(): JSX.Element {
   const user = useSelector((state: AppStore) => state.user);
